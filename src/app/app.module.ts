@@ -11,13 +11,14 @@ import { HeroPowerComponent } from './hero-power/hero-power.component';
 import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeroService } from './hero/hero.service';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 // import 'hammerjs';
 
 @NgModule({
   declarations: [ // components and directives
-    AppComponent, HeroComponent, HeroDetailComponent, HeroPowerComponent
+    AppComponent, HeroComponent, HeroDetailComponent, HeroPowerComponent, DashboardComponent
   ],
   imports: [ // modules
     BrowserModule,
