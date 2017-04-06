@@ -5,18 +5,30 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeroComponent } from './hero/hero.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { HeroPowerComponent } from './hero-power/hero-power.component';
+import { MaterialModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeroService } from './hero/hero.service';
+
+
+// import 'hammerjs';
 
 @NgModule({
-  declarations: [
-    AppComponent
+  declarations: [ // components and directives
+    AppComponent, HeroComponent, HeroDetailComponent, HeroPowerComponent
   ],
-  imports: [
+  imports: [ // modules
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    MaterialModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [HeroService], // services
   bootstrap: [AppComponent]
 })
 export class AppModule { }
