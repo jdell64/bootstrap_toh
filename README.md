@@ -38,3 +38,7 @@ angular-cli.json
         "../node_modules/primeng/resources/themes/omega/theme.css",
         "../node_modules/font-awesome/css/font-awesome.min.css"
 
+sources:
+http://sirajc.github.io/angular2-bs4-navbar/heroes
+
+style guide -> more than 7 files, consider making a folder
