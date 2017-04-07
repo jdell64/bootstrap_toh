@@ -19,7 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "toh",
       "styles": [
-        "styles.scss"
+        "styles.scss",
+        "../node_modules/font-awesome/css/font-awesome.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
@@ -48,6 +49,9 @@
     {
       "project": "e2e/tsconfig.e2e.json"
     }
+  ],
+  "addons":[
+    "../node_modules/font-awesome/fonts/*.+(otf|eot|svg|ttf|woff|woff2)"
   ],
   "test": {
     "karma": {

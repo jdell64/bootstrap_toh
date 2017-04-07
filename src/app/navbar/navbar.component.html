@@ -1,4 +1,4 @@
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded clearfix">
+<nav class="navbar navbar-toggleable-md navbar navbar-inverse bg-primary clearfix">
   <div class="clearfix">
     <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler navbar-toggler-right" type="button" 
     aria-controls="bd-main-nav" aria-label="Toggle navigation">
@@ -12,10 +12,13 @@
   <!--TODO: ngFor-->
     <ul class="nav navbar-nav mr-auto">
       <li class="nav-item" routerLinkActive="active">
-        <a routerLink="/dashboard" class="nav-item nav-link" (click)="isCollapsed = !isCollapsed">Dashboard</a>
+        <a routerLink="/dashboard" class="nav-item nav-link" (click)="isCollapsed = !isCollapsed">
+        <i class="fa fa-tachometer link-icon" aria-hidden="true"></i>Dashboard
+        </a>
       </li>
       <li class="nav-item" routerLinkActive="active">
-        <a routerLink="/heroes" class="nav-item nav-link" (click)="isCollapsed = !isCollapsed">Heroes</a>
+        <a routerLink="/heroes" class="nav-item nav-link" (click)="isCollapsed = !isCollapsed">
+        <i class="fa fa-superpowers link-icon" aria-hidden="true"></i>Heroes</a>
       </li>
     </ul>
   </div>

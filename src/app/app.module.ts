@@ -13,7 +13,7 @@ import { HeroService } from './services/hero.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
 
 @NgModule({
   declarations: [ // components and directives
@@ -25,7 +25,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     HttpModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    Angular2FontawesomeModule
   ],
   providers: [HeroService], // services
   bootstrap: [AppComponent]
