@@ -1,7 +1,7 @@
 import { Hero } from "./hero";
 
 export const HEROES: Hero[] = [
-  { id: 11, name: 'Mr. Nice',        imgUrl: 'http://placehold.it/250x250' },
+  { id: 11, name: 'Mr. Nice',        imgUrl: '' },
   { id: 12, name: 'Narco', power: 3, imgUrl: 'http://placehold.it/250x250' },
   { id: 13, name: 'Bombasto',        imgUrl: 'http://placehold.it/250x250' },
   { id: 14, name: 'Celeritas',       imgUrl: 'http://placehold.it/250x250' },

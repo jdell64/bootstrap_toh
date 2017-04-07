@@ -44,3 +44,6 @@ http://sirajc.github.io/angular2-bs4-navbar/heroes
 style guide -> more than 7 files, consider making a folder
 https://www.npmjs.com/package/angular2-fontawesome
 http://stackoverflow.com/questions/37048210/visual-studio-code-files-autosave-onfocuschange-not-working
+
+https://preloaders.net/en/filtered-search/circular/free/
+http://loading.io/

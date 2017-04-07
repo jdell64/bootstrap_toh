@@ -1,8 +1,16 @@
-.hero-detail-pic {
+.hero-detail-pic-container {
     width: 250px;
     height: 250px; // why? because we want it to take up the same space even when not loaded 
     margin: 10px auto;
+    // center
+    text-align: center;
+    line-height: 250px;
 }
-.hero-detail-card{
+
+.hero-detail-pic-container {
+    vertical-align: middle;
+}
+
+.hero-detail-card {
     border-top: 1px solid rgba(0, 0, 0, 0.125);
 }

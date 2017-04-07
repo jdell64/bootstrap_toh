@@ -1,11 +1,16 @@
 <!--TODO: loading spin if src -->
 <div *ngIf="hero" class="card">
-  <img class="card-img-top hero-detail-pic" src="{{hero.imgUrl}}" alt="Hero Pic"/>
+  <!--http://stackoverflow.com/questions/37936436/how-to-load-image-with-spinner-in-angular2-->
+  <div class="card-img-top hero-detail-pic-container">
+    <img *ngIf="loading" src="/assets/ring.svg" alt="loading" />
+    <img [hidden]="loading" (load)="onLoad()" src="{{hero.imgUrl}}" alt="Hero Pic" />
+
+  </div>
   <div class="card-block hero-detail-card">
     <h4 class="card-title">{{hero.name}} details!</h4>
     <p class="card-text"><label>id: </label>{{hero.id}}</p>
     <p class="card-text"><label>Name: </label>
-    <input [(ngModel)]="hero.name" placeholder="name" />
+      <input [(ngModel)]="hero.name" placeholder="name" />
     </p>
     <!--TODO: for input and output-->
     <!--<toh-hero-power [(value)]="hero.power"></toh-hero-power>-->
