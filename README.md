@@ -47,3 +47,6 @@ http://stackoverflow.com/questions/37048210/visual-studio-code-files-autosave-on
 
 https://preloaders.net/en/filtered-search/circular/free/
 http://loading.io/
+
+todo: add a loading directive
+todo: fix the back button
