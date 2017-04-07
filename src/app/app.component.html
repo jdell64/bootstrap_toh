@@ -1,9 +1,37 @@
-<h1>
-  {{title}}
-</h1>
-<nav>
-    <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
-    <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
-  </nav>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded clearfix">
+  <div class="clearfix">
+    <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler navbar-toggler-right" type="button" 
+    aria-controls="bd-main-nav" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <a class="navbar-brand" href="#">TOH</a>
+  <!--https://github.com/sirajc/angular2-bs4-navbar/blob/master/src/app/navbar/navbar.component.html-->
+  <div class="collapse navbar-collapse" [attr.aria-expanded]="!isCollapsed" [ngClass]="{collapse: isCollapsed}" 
+  id="navbarSupportedContent">
+  <!--TODO: ngFor-->
+    <ul class="nav navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a routerLink="/dashboard" class="nav-item nav-link" (click)="isCollapsed = !isCollapsed">Dashboard</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a routerLink="/heroes" class="nav-item nav-link" (click)="isCollapsed = !isCollapsed">Heroes</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-<router-outlet></router-outlet>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 col-xs-1">
+    </div>
+    <div class="col-md-8 col-xs-10">
+      <h1 class="text-md-center">
+        {{title}}
+      </h1>
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-md-2 col-xs-1">
+    </div>
+  </div>
+</div>

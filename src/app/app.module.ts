@@ -14,8 +14,6 @@ import { HeroService } from './hero/hero.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 
-// import 'hammerjs';
-
 @NgModule({
   declarations: [ // components and directives
     AppComponent, HeroComponent, HeroDetailComponent, HeroPowerComponent, DashboardComponent
@@ -26,7 +24,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HttpModule,
     AppRoutingModule,
     FormsModule,
-    MaterialModule,
     BrowserAnimationsModule
   ],
   providers: [HeroService], // services
