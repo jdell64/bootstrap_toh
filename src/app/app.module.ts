@@ -12,11 +12,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeroService } from './services/hero.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
   declarations: [ // components and directives
-    AppComponent, HeroDetailComponent, HeroPowerComponent, DashboardComponent, HeroesComponent
+    AppComponent, HeroDetailComponent, HeroPowerComponent, DashboardComponent, HeroesComponent, NavbarComponent
   ],
   imports: [ // modules
     BrowserModule,

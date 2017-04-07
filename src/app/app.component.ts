@@ -10,7 +10,7 @@ import { HeroService } from "./services/hero.service";
 
 export class AppComponent {
   title = 'Tour of Heroes';
-  isCollapsed = true;
+  
   constructor( ) {
     
   }
