@@ -1,0 +1,8 @@
+.hero-detail-pic {
+    width: 250px;
+    height: 250px; // why? because we want it to take up the same space even when not loaded 
+    margin: 10px auto;
+}
+.hero-detail-card{
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
