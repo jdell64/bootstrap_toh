@@ -50,3 +50,6 @@ http://loading.io/
 
 todo: add a loading directive
 todo: fix the back button
+
+https://v4-alpha.getbootstrap.com/layout/responsive-utilities/
+http://stackoverflow.com/questions/33770823/angular2-how-to-set-element-class-name-when-using-ng-for-only-on-first-element
