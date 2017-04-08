@@ -1,38 +1,15 @@
 <div class="jumbotron">
-<h3 class="display-5">Top Heroes</h3>
-<!--<div class="grid grid-pad">
-  <div *ngFor="let hero of heroes" class="col-1-4">
-    <div class="module hero">
-      <h4>{{hero.name}}</h4>
-    </div>
-  </div>
-</div>-->
-<!--<a *ngFor="let hero of heroes"  [routerLink]="['/detail', hero.id]"  class="col-1-4">-->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-      first
-    </div>
-    <div class="carousel-item">
-      second
-    </div>
-    <div class="carousel-item">
-      third
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+  <h3 class="display-5">Top Heroes</h3>
 
+  <ngb-carousel class="hero-carousel">
+    <template ngbSlide *ngFor="let hero of heroes">
+      <a class="slide-container" [routerLink]="['/detail', hero.id]">
+        <img src="{{hero.imgUrl}}" alt="Random first slide">
+        <div class="carousel-caption">
+          <h3>{{hero.name}}</h3>
+          <!--<p>This carousel uses customized default values.</p>-->
+        </div>
+      </a>
+    </template>
+  </ngb-carousel>
 </div>

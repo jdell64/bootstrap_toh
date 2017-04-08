@@ -1,0 +1,25 @@
+// TODO: make carousel height a variable
+.hero-carousel {
+    height: 250px; 
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+    border-radius: 4px;
+    .slide-container {
+        width: 100%;
+        line-height: 100%;
+    }
+}
+
+// TODO: find a way to ignore this error
+:host /deep/ .carousel-inner {
+    height: 250px;
+    .carousel-item {
+        height: 250px;
+        .slide-container {           
+            line-height: 250px;
+            .carousel-caption {
+                line-height: 100%;
+            }
+        }
+    }
+}

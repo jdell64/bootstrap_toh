@@ -14,6 +14,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [ // components and directives
@@ -26,7 +27,9 @@ import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawe
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    Angular2FontawesomeModule
+    Angular2FontawesomeModule,
+    NgbModule.forRoot()
+    
   ],
   providers: [HeroService], // services
   bootstrap: [AppComponent]
