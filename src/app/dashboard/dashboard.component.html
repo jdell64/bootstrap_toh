@@ -7,7 +7,7 @@
         <img src="{{hero.imgUrl}}" alt="Random first slide">
         <div class="carousel-caption">
           <h3>{{hero.name}}</h3>
-          <!--<p>This carousel uses customized default values.</p>-->
+          <p *ngIf="hero.power">Power: {{hero.power}}</p>
         </div>
       </a>
     </template>

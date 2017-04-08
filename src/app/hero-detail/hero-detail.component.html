@@ -8,12 +8,31 @@
   </div>
   <div class="card-block hero-detail-card">
     <h4 class="card-title">{{hero.name}} details!</h4>
-    <p class="card-text"><label>id: </label>{{hero.id}}</p>
-    <p class="card-text"><label>Name: </label>
-      <input [(ngModel)]="hero.name" placeholder="name" />
-    </p>
+    <div class="card-text row">
+      <label class="col-3">id:</label>
+       <div class="col-9">
+        {{hero.id}}
+       </div>
+    </div>
+    <div class="card-text row">
+      <label class="col-sm-3">Name:</label>
+      <div class="col-sm-9">
+        <input [(ngModel)]="hero.name" placeholder="name" class="form-control"/>
+      </div>
+    </div>
     <!--TODO: for input and output-->
-    <!--<toh-hero-power [(value)]="hero.power"></toh-hero-power>-->
-    <button (click)="goBack()" class="btn btn-primary">Back</button>
+     <div class="card-text row">
+      <label class="col-sm-3">Power Level:</label>
+      <div class="col-sm-9">
+        <toh-hero-power [(value)]="hero.power"></toh-hero-power>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-12">
+        <button (click)="goBack()" class="btn btn-primary">Back</button>
+      </div>
+    </div>
   </div>
 </div>
