@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <h3 class="display-5">Top Heroes</h3>
 
-  <ngb-carousel class="hero-carousel">
+  <ngb-carousel class="hero-carousel rounded">
     <template ngbSlide *ngFor="let hero of heroes">
       <a class="slide-container" [routerLink]="['/detail', hero.id]">
         <!--<img src="{{hero.imgUrl}}" alt="Random first slide">-->

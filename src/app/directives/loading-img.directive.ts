@@ -1,5 +1,5 @@
 import { Directive, ElementRef, HostListener, Input } from '@angular/core';
-
+// TODO: this doesn't work... either fix it or remove it
 @Directive({
   selector: '[tohLoadingImg]'
 })
