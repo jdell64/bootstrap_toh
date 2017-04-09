@@ -13,21 +13,23 @@ import { InMemoryDataService } from './in-memory-data.service';
 
 
 import { AppComponent } from './app.component';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { HeroPowerComponent } from './hero-power/hero-power.component';
 import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeroService } from './services/hero.service';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { HeroesComponent } from './heroes/heroes.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { SpinnerImgComponent } from './spinner-img/spinner-img.component';
 import { LoadingImgDirective } from './directives/loading-img.directive';
+import { HeroSearchService } from './services/hero-search.service';
+import { HeroSearchComponent } from './components/hero-search/hero-search.component';
+import { HeroDetailComponent } from "./components/hero-detail/hero-detail.component";
+import { HeroPowerComponent } from "./components/hero-power/hero-power.component";
+import { DashboardComponent } from "./components/ui/dashboard/dashboard.component";
+import { SpinnerImgComponent } from "./components/ui/spinner-img/spinner-img.component";
+import { HeroesComponent } from "./components/heroes/heroes.component";
+import { NavbarComponent } from "./components/ui/navbar/navbar.component";
 
 @NgModule({
   declarations: [ // components and directives
     AppComponent, HeroDetailComponent, HeroPowerComponent, DashboardComponent,
-    HeroesComponent, NavbarComponent, LoadingImgDirective, SpinnerImgComponent
+    HeroesComponent, NavbarComponent, LoadingImgDirective, SpinnerImgComponent, HeroSearchComponent
   ],
   imports: [ // modules
     BrowserModule,
@@ -42,7 +44,7 @@ import { LoadingImgDirective } from './directives/loading-img.directive';
     InMemoryWebApiModule.forRoot(InMemoryDataService)
 
   ],
-  providers: [HeroService], // services
+  providers: [HeroService, HeroSearchService], // services
   bootstrap: [AppComponent]
 })
 export class AppModule { }
