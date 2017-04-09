@@ -1,3 +1,11 @@
-<p>
-  hero-search works!
-</p>
+<div id="search-component">
+  <h4>Hero Search</h4>
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+  <div>
+    <ul class="list-group">
+      <li *ngFor="let hero of heroes | async"
+         (click)="gotoDetail(hero)" class="search-result list-group-item list-group-item-action" >
+       {{hero.name}}
+      </li>
+  </ul>
+</div>

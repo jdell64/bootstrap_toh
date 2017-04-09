@@ -28,8 +28,11 @@ import { NavbarComponent } from "./components/ui/navbar/navbar.component";
 
 @NgModule({
   declarations: [ // components and directives
-    AppComponent, HeroDetailComponent, HeroPowerComponent, DashboardComponent,
-    HeroesComponent, NavbarComponent, LoadingImgDirective, SpinnerImgComponent, HeroSearchComponent
+    AppComponent, HeroDetailComponent, 
+    HeroPowerComponent, DashboardComponent,
+    HeroesComponent, NavbarComponent,
+    LoadingImgDirective, SpinnerImgComponent,  
+    HeroSearchComponent
   ],
   imports: [ // modules
     BrowserModule,
