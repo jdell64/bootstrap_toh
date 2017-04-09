@@ -14,11 +14,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LoadingImgDirective } from './directives/loading-img.directive';
+import { SpinnerImgComponent } from './spinner-img/spinner-img.component';
 
 @NgModule({
   declarations: [ // components and directives
-    AppComponent, HeroDetailComponent, HeroPowerComponent, DashboardComponent, HeroesComponent, NavbarComponent
+    AppComponent, HeroDetailComponent, HeroPowerComponent, DashboardComponent, HeroesComponent, NavbarComponent, LoadingImgDirective, SpinnerImgComponent, 
   ],
   imports: [ // modules
     BrowserModule,

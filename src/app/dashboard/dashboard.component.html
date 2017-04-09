@@ -4,7 +4,9 @@
   <ngb-carousel class="hero-carousel">
     <template ngbSlide *ngFor="let hero of heroes">
       <a class="slide-container" [routerLink]="['/detail', hero.id]">
-        <img src="{{hero.imgUrl}}" alt="Random first slide">
+        <!--<img src="{{hero.imgUrl}}" alt="Random first slide">-->
+        <!--<img src="{{hero.imgUrl}}" alt="Random first slide" [tohLoadingImg]="'/assets/ring.svg'">-->
+        <toh-spinner-img [imgSrc]="hero.imgUrl" [spinnerSrc]="'/assets/ring.svg'"></toh-spinner-img>
         <div class="carousel-caption">
           <h3>{{hero.name}}</h3>
           <p *ngIf="hero.power">Power: {{hero.power}}</p>
