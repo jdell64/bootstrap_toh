@@ -1,17 +1,52 @@
 <h2>My Heroes</h2>
+<!--TODO: make this an accordian-->
 <ul class="list-group">
-  <li *ngFor="let hero of heroes"
-    class="list-group-item"
-    [class.active]="hero === selectedHero"
-    (click)="onSelect(hero)">
-    <span class="badge badge-info hero-id-badge">{{hero.id}}</span>{{hero.name}}
+  <li *ngFor="let hero of heroes" class="list-group-item" [class.active]="hero === selectedHero" (click)="onSelect(hero)">
+    <div class="col-12">
+      <span class="badge badge-info hero-id-badge">{{hero.id}}</span>
+      <span>{{hero.name}}</span>
+      <button class="btn btn-danger btn-sm float-right" (click)="delete(hero); $event.stopPropagation()">
+        <i class="fa fa-remove" aria-hidden="true"></i>
+      </button>
+    </div>
   </li>
 </ul>
 <div *ngIf="selectedHero" class="card hero-card">
   <div class="card-block">
-  <h4 class="card-text">
-    {{selectedHero.name | uppercase}} is my hero.
-  </h4>
-  <button class="btn btn-primary" (click)="gotoDetail()">View Details</button>
+    <h4 class="card-text">
+      {{selectedHero.name | uppercase}} is my hero.
+    </h4>
+    <button class="btn btn-primary" (click)="gotoDetail()">View Details</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-block">
+    <h3 class="card-title">Add Hero</h3>
+
+    <div class="row">
+      <div class="col-md-4">
+        <label>Hero Name:</label>
+      </div>
+      <div class="col-md-8">
+        <input #heroName class="form-control"/>
+      </div>
+    </div>
+    <!--<div class="row">
+      <div class="col-md-4">
+        <label>Picture Url:</label>
+      </div>
+      <div class="col-md-8">
+        <input # class="form-control"/>
+      </div>
+    </div>-->
+
+    <div class="row">
+      <div class="col-12">
+        <button class="btn btn-primary" (click)="add(heroName.value); heroName.value=''">
+         Add
+        </button>
+      </div>
+    </div>
   </div>
 </div>

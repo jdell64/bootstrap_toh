@@ -53,3 +53,7 @@ todo: fix the back button
 
 https://v4-alpha.getbootstrap.com/layout/responsive-utilities/
 http://stackoverflow.com/questions/33770823/angular2-how-to-set-element-class-name-when-using-ng-for-only-on-first-element
+
+npm install angular-in-memory-web-api
+
+`#heroName` -> (template reference variable) -> https://angular.io/docs/ts/latest/guide/template-syntax.html#!#ref-vars

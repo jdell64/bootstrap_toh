@@ -12,7 +12,7 @@ import 'rxjs/add/operator/switchMap';
 })
 export class HeroDetailComponent implements OnInit {
   @Input() hero: Hero;
-  
+
   loading: boolean = true
   onLoad() {
     this.loading = false;
@@ -32,6 +32,10 @@ export class HeroDetailComponent implements OnInit {
 
   goBack(): void {
     this.location.back();
+  }
+  save(): void {
+    this.heroService.update(this.hero)
+    .then(() => this.goBack())
   }
 
 }
