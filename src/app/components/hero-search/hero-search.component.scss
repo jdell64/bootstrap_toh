@@ -1,3 +1,7 @@
 .search-result {
     cursor: pointer;
 }
+.search-result-list{
+    position: absolute;
+    z-index: 1;
+}

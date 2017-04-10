@@ -17,8 +17,10 @@ export class SpinnerImgComponent implements OnInit {
     this.loading = false;
   }
 
-  constructor() { }
+  constructor() {
+  }
 
-  ngOnInit() { }
+  ngOnInit() { 
+  }
 
 }

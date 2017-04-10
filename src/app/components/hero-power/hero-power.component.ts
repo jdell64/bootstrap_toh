@@ -17,15 +17,11 @@ export class HeroPowerComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes) { // lifestyle hooks
-    console.log(changes, this.value);
     this.value = this.value || 0;
   }
 
   ngOnInit() {
-    //  this.value = this.value || 0;
   }
-
-  
 
   incrementValue(): void {
     this.value++;
