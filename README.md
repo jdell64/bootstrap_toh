@@ -1,3 +1,14 @@
+# Stackoverflow question 43314103
+[This issue](http://stackoverflow.com/questions/43314103) on Stackoverflow can be reproduced in the following way:
+
+1. go to a 'hero detail' page of hero 11:
+  - note the spinning svg. This is the spinner img component. When the img cannot be found (or is loading), it defaults to a spinner img. OnLoad changes the image to the actual image. hero 11 does not have an image, so the spinner stays (desired affect).
+2. type "m" in the search bar in the nav.
+3. click on `Bombasto`. Note the pic loads
+4. click on `Mr. Nice (no pic)`. Note that there is now no image (although this is hero 11, and we had a spinner before).
+
+Another minor issue (which might be solved at the same time), is why does the menu stay open on navigate? Maybe I can clear the search bar on navigate?
+
 # AngularTourOfHeroes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
@@ -57,3 +68,5 @@ http://stackoverflow.com/questions/33770823/angular2-how-to-set-element-class-na
 npm install angular-in-memory-web-api
 
 `#heroName` -> (template reference variable) -> https://angular.io/docs/ts/latest/guide/template-syntax.html#!#ref-vars
+
+ docker run -p 49160:4200 -d jdell64/bootstrap_toh
