@@ -70,3 +70,6 @@ npm install angular-in-memory-web-api
 `#heroName` -> (template reference variable) -> https://angular.io/docs/ts/latest/guide/template-syntax.html#!#ref-vars
 
  docker run -p 49160:4200 -d jdell64/bootstrap_toh
+
+
+ // "start": "ng serve -H 0.0.0.0",
